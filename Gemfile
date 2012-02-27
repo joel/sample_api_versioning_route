@@ -7,11 +7,13 @@ gem 'rails', '3.2.1'
 
 gem 'sqlite3'
 
-gem 'json'
-gem 'rabl' # , :git => 'git://github.com/ccocchi/rabl-fast-json.git'
+# gem 'json'
+# gem 'rabl' # , :git => 'git://github.com/ccocchi/rabl-fast-json.git'
+gem 'rabl', :git => 'git://github.com/nesquena/rabl.git'
 
 group :development do
-  gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+  # gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
 # Gems used only for assets and not required

@@ -1,5 +1,13 @@
 GIT
-  remote: http://github.com/seyhunak/twitter-bootstrap-rails.git
+  remote: git://github.com/nesquena/rabl.git
+  revision: 8244a6ffd14fd0284195c88e06b6f66c64405574
+  specs:
+    rabl (0.6.0)
+      activesupport (>= 2.3.14)
+      multi_json (~> 1.0.3)
+
+GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 1860e9ed147d293bf7d780be5996a2992821c653
   specs:
     twitter-bootstrap-rails (2.0.3)
@@ -70,9 +78,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
-    multi_json (1.1.0)
+    multi_json (1.0.4)
     polyglot (0.3.3)
-    rabl (0.2.8)
     rack (1.4.1)
     rack-cache (1.1)
       rack (>= 0.4)
@@ -126,8 +133,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  json
-  rabl
+  rabl!
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sqlite3
