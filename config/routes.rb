@@ -1,8 +1,16 @@
 SampleApiVersioningRoute::Application.routes.draw do
 
-  constraints ApiVersion.new(1) do
+  constraints ApiVersion.new(3) do
     scope :module => :api do
-      scope :module => :v1 do
+      scope :module => :v3 do
+        resources :no_resources_here
+      end
+    end
+  end
+
+  constraints ApiVersion.new(2) do
+    scope :module => :api do
+      scope :module => :v2 do
         resources :crypto, :only => [:encode, :decode] do
           collection do
             get :encode
@@ -13,9 +21,9 @@ SampleApiVersioningRoute::Application.routes.draw do
     end
   end
 
-  constraints ApiVersion.new(2) do
+  constraints ApiVersion.new(1) do
     scope :module => :api do
-      scope :module => :v2 do
+      scope :module => :v1 do
         resources :crypto, :only => [:encode, :decode] do
           collection do
             get :encode

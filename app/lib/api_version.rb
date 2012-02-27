@@ -11,8 +11,13 @@ class ApiVersion
   private
 
   def versioned_accept_header?(request)
+    valid = false
     accept = request.headers['Accept']
-    accept && accept[/application\/sample.api.v#{@version}\+json/]
+    if accept
+      current_version = (accept.match(/application\/sample.api.v(.+)\+json/)[1] rescue 0)
+      valid = true if current_version.to_i >= @version
+    end
+    valid
   end
 
 end

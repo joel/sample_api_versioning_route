@@ -5,3 +5,4 @@ Based on http://freelancing-gods.com/posts/versioning_your_ap_is
 * curl -v -H 'Accept: application/json' "http://localhost.com:3000/crypto/encode?value=foo" # Unversionned Controller
 * curl -v -H 'Accept: application/sample.api.v1+json' "http://localhost.com:3000/crypto/encode.json?value=foo"
 * curl -v -H 'Accept: application/sample.api.v2+json' "http://localhost.com:3000/crypto/encode.json?value=foo"
+* curl -v -H 'Accept: application/sample.api.v3+json' "http://localhost.com:3000/crypto/encode.json?value=foo"
