@@ -1,3 +1,3 @@
 object @crypto
 attribute :value
-node(:encoding) { |c| c.value.reverse }
+node(:decodingv2) { |c| c.value.reverse }

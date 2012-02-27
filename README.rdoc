@@ -1,4 +1,6 @@
 == Sample Versionning API
 
+Based on http://freelancing-gods.com/posts/versioning_your_ap_is
+
 * curl -v -H 'Accept: application/sample.api.v1+json' "http://localhost.com:3000/api/crypto/encode.json?value=foo"
 * curl -v -H 'Accept: application/sample.api.v2+json' "http://localhost.com:3000/api/crypto/encode.json?value=foo"
